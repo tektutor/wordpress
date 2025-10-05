@@ -9,7 +9,7 @@ We provide a fully maintained rootless Wordpress container image, ready for Open
 ## Deploying Wordpress using this Container Image on Openshift
 ```
 oc new-app --name wordpress tektutor/wordpress:1.0 \
-  -e WORDPRESS_DB_HOST=rootless-mariadb \
+  -e WORDPRESS_DB_HOST=mariadb \
   -e WORDPRESS_DB_USER=wordpress \
   -e WORDPRESS_DB_PASSWORD=-your-wordpress-dbserver-password \
   -e WORDPRESS_DB_NAME=wordpress
